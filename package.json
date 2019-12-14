@@ -1,0 +1,14 @@
+{
+  "name": "timlo-resume",
+  "version": "1.0.0",
+  "description": "timlo responsive resume portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass":"node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "timlo",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
