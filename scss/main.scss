@@ -79,7 +79,7 @@ main {
   grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
-    "job1 job2 job3";
+    "title job1 job2 ";
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -87,13 +87,20 @@ main {
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
+    opacity: 0.7;
+    width: 200px;
+    height: 200px;
   }
 
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
+    p {
+      font-size: 1rem;
+    }
   }
 
+  
   .job-1 {
     grid-area: job1;
   }
@@ -102,21 +109,24 @@ main {
     grid-area: job2;
   }
 
-  .job-3 {
-    grid-area: job3;
-  }
+  
 
   .job {
-    background: lighten($primary-color, 5);
+    background: lighten(#17141d, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    h3,h4,p{
+      padding: 20px;
+    }
   }
 }
 
 // Work/Project
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
+  grid-gap: 1.7rem;
   grid-template-columns: repeat(3, 1fr);
 
   img {
@@ -129,6 +139,105 @@ main {
       @include easeOut;
     }
   }
+}
+
+// Competition
+.container {
+  position: absolute;
+  height: 700px;
+  width: 1500px;
+  top: 360px;
+  left: calc(50% - 750px);
+  display: flex;
+}
+
+.card {
+  display: flex;
+  height: 580px;
+  width: 500px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+  margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0, 154, 217);
+  background: linear-gradient(90deg, rgba(0, 154, 217, 1) 0%, rgba(217, 147, 0, 1) 65%, rgba(255, 186, 0, 1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
 }
 
 // Button Styles
@@ -158,7 +267,6 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
 }
