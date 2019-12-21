@@ -68,7 +68,8 @@
   .menu .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 28px;
+    font-weight: lighter;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
@@ -233,8 +234,24 @@ main {
     .projects .item:hover .information {
       color: #fff;
       padding-top: 50px;
-      padding-left: 3px;
       visibility: visible; }
+      .projects .item:hover .information h3 {
+        padding-left: 25px; }
+      .projects .item:hover .information .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg); }
+      .projects .item:hover .information li {
+        list-style: none;
+        padding-bottom: 5px; }
+        .projects .item:hover .information li i {
+          border: solid #63fdcf;
+          border-width: 0 3px 3px 0;
+          display: inline-block;
+          padding: 2px; }
+        .projects .item:hover .information li p {
+          font-size: 5px;
+          display: inline;
+          padding: 5px; }
 
 .competitions {
   display: grid;
@@ -246,7 +263,7 @@ main {
     color: #fff; }
   .competitions img {
     width: 100%;
-    height: 300px;
+    height: 325px;
     border: 3px #fff solid;
     border-radius: 10px; }
   .competitions .item:hover {
