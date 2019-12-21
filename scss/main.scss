@@ -119,10 +119,32 @@ main {
     border-bottom: $secondary-color 5px solid;
     border-radius: 10px;
     box-shadow: -1rem 0 3rem #000;
-    h3,
-    h4,
-    p {
-      padding: 20px;
+
+    h2,
+    h5,
+    h6 {
+      padding-left: 5px;
+      font-weight: lighter;
+    }
+
+    .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+    li {
+      display: inline-block;
+      list-style: none;
+      i {
+        border: solid $secondary-color;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 2px;
+      }
+      p {
+        font-size: 5px;
+        display: inline;
+        padding: 5px ;
+      }
     }
   }
 }

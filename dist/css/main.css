@@ -186,10 +186,26 @@ main {
     border-bottom: #63fdcf 5px solid;
     border-radius: 10px;
     box-shadow: -1rem 0 3rem #000; }
-    .about-info .job h3,
-    .about-info .job h4,
-    .about-info .job p {
-      padding: 20px; }
+    .about-info .job h2,
+    .about-info .job h5,
+    .about-info .job h6 {
+      padding-left: 5px;
+      font-weight: lighter; }
+    .about-info .job .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg); }
+    .about-info .job li {
+      display: inline-block;
+      list-style: none; }
+      .about-info .job li i {
+        border: solid #63fdcf;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 2px; }
+      .about-info .job li p {
+        font-size: 5px;
+        display: inline;
+        padding: 5px; }
 
 .projects {
   display: grid;
