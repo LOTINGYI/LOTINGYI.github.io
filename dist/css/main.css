@@ -186,7 +186,9 @@ main {
     border-bottom: #63fdcf 5px solid;
     border-radius: 10px;
     box-shadow: -1rem 0 3rem #000; }
-    .about-info .job h3, .about-info .job h4, .about-info .job p {
+    .about-info .job h3,
+    .about-info .job h4,
+    .about-info .job p {
       padding: 20px; }
 
 .projects {
@@ -201,87 +203,26 @@ main {
       border-color: #63fdcf;
       transition: all 0.5s ease-out; }
 
-.container {
-  position: absolute;
-  height: 700px;
-  width: 1500px;
-  top: 360px;
-  left: calc(50% - 750px);
-  display: flex; }
-
-.card {
-  display: flex;
-  height: 480px;
-  width: 500px;
-  background-color: #17141d;
-  border-radius: 10px;
-  box-shadow: -1rem 0 3rem #000;
-  /*   margin-left: -50px; */
-  transition: 0.4s ease-out;
-  position: relative;
-  left: 0px; }
-
-.card:not(:first-child) {
-  margin-left: -50px; }
-
-.card:hover {
-  transform: translateY(-20px);
-  transition: 0.4s ease-out; }
-
-.card:hover ~ .card {
-  position: relative;
-  left: 50px;
-  transition: 0.4s ease-out; }
-
-.title {
-  color: white;
-  font-weight: 300;
-  position: absolute;
-  left: 20px;
-  top: 15px; }
-
-.bar {
-  position: absolute;
-  top: 100px;
-  left: 20px;
-  height: 5px;
-  width: 150px; }
-
-.emptybar {
-  background-color: #2e3033;
-  width: 100%;
-  height: 100%; }
-
-.filledbar {
-  position: absolute;
-  top: 0px;
-  z-index: 3;
-  width: 0px;
-  height: 100%;
-  background: #009ad9;
-  background: linear-gradient(90deg, #009ad9 0%, #d99300 65%, #ffba00 100%);
-  transition: 0.6s ease-out; }
-
-.card:hover .filledbar {
-  width: 120px;
-  transition: 0.4s ease-out; }
-
-.comp1 {
-  width: 450px;
-  padding: 10px; }
-
-.comp2 {
-  width: 450px;
-  padding: 10px;
-  height: 300px; }
-
-.comp3 {
-  width: 450px;
-  padding: 10px; }
-
-.card:hover .stroke {
-  stroke-dashoffset: 100;
-  transition: 0.6s ease-out; }
+.competitions {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 2fr); }
+  .competitions .information {
+    padding: 20px;
+    visibility: hidden;
+    color: #fff; }
+  .competitions img {
+    width: 100%;
+    height: 98%;
+    border: 3px #fff solid;
+    border-radius: 10px; }
+  .competitions .item:hover {
+    opacity: 0.8;
+    border-color: #63fdcf; }
+    .competitions .item:hover .img_competition {
+      transition: all 0.5s ease-out; }
+    .competitions .item:hover .information {
+      visibility: visible; }
 
 .btn, .btn-dark, .btn-light {
   display: block;

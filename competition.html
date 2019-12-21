@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/84ee932288.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="dist/css/main.css">
-    <title>Welcome to my portfolio</title>
+    <title>View My Work</title>
 </head>
 
 <body>
@@ -24,13 +24,13 @@
                 <div class="portrait"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item current">
+                <li class="nav-item">
                     <a href="/index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="/about.html" class="nav-link">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item current">
                     <a href="/work.html" class="nav-link">My Work</a>
                 </li>
                 <li class="nav-item">
@@ -42,48 +42,55 @@
 
     <main id="competition">
         <h1 class="lg-heading">
-            Competition <span class="text-secondary">Awards</span>
+            Competition <span class="text-secondary">Award</span>
         </h1>
         <h2 class="sm-heading">
-            These are my amazing journeys
+            These are my amazing journeys ...
         </h2>
-        <div class="container">
-            <div class="card">
-                <h3 class="title">NASA Hackathon</h3>
-                <div class="bar">
-                    <div class="emptybar"></div>
-                    <div class="filledbar"></div>
-                    <img src="./dist/img/NASA_Hackathon.jpg" class="comp1" alt="">
+        <div class="competitions">
+            <div class="item">
+                <div class="img_competition">
+                    <img src="./dist/img/APICTA_AWARD.jpg" alt="Competition">
                 </div>
-                <div class="circle">
-                    <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="stroke" cx="60" cy="60" r="50" />
-                    </svg> -->
+                <div class="information">
+                    <h3>Competition: APICTA Awards 2019</h3>
+                    <h4>Award: Merit [second place]</h4>
+                    <h4>Scope: Asia Pacific</h4>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="img_competition">
+                    <img src="./dist/img/InnoServe.jpg" alt="Competition">
+                </div>
+                <div class="information">
+                    <h3>Competition: InnoServe 2019</h3>
+                    <h4>Award: Champion </h4>
+                    <h4>Scope: Taiwan</h4>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="img_competition">
+                    <img src="./dist/img/NASA_Hackathon.jpg" alt="Competition">
+                </div>
+                <div class="information">
+                    <h3>Competition: NASA Hackathon 2019</h3>
+                    <h4>Award: Microsoft Special Award </h4>
+                    <h4>Scope: Regional</h4>
                 </div>
             </div>
-            <div class="card">
-                <h3 class="title">InnoServe Awards</h3>
-                <div class="bar">
-                    <div class="emptybar"></div>
-                    <div class="filledbar"></div>
-                    <img src="./dist/img/InnoServe.jpg" class="comp2" alt="">
-                </div>
-                
-            </div>
-            <div class="card">
-                <h3 class="title">APICTA</h3>
-                <div class="bar">
-                    <div class="emptybar"></div>
-                    <div class="filledbar"></div>
-                    <img src="./dist/img/APICTA_Award.jpg" class="comp3" alt="">
-                </div>
-                
-                
-            </div>
-            
+
+
+
+
+        </div>
         </div>
     </main>
 
+    <footer id="main-footer">
+        Copyright &copy; 2019
+    </footer>
 
     <script src="dist/js/main.js"></script>
 </body>
