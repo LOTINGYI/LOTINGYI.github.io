@@ -157,11 +157,12 @@ main {
 
   img {
     width: 100%;
-    border: 3px #fff solid;
-
+    height: 88%;
+    border: 3px $secondary-color solid;
+    border-radius: 5px;
     &:hover {
       opacity: 0.5;
-      border-color: $secondary-color;
+      // border-color: $secondary-color;
       @include easeOut;
     }
   }
@@ -215,15 +216,17 @@ main {
 }
 
 .btn-dark {
+  display: inline;
   @extend .btn;
-  background: darken($primary-color, 50);
-  color: #fff;
+  // background: darken($primary-color, 50);
+  color: $secondary-color;
 }
 
 .btn-light {
+  display: inline;
   @extend .btn;
-  background: lighten(#333, 50);
-  color: #333;
+  // background: lighten(#333, 50);
+  color: $secondary-color;
 }
 
 #main-footer {
