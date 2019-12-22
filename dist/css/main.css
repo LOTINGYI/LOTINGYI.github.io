@@ -208,7 +208,7 @@ main {
         display: inline-block;
         padding: 2px; }
       .about-info .job li p {
-        font-size: 5px;
+        font-size: 12px;
         display: inline;
         padding: 5px; }
 
@@ -249,7 +249,7 @@ main {
           display: inline-block;
           padding: 2px; }
         .projects .item:hover .information li p {
-          font-size: 5px;
+          font-size: 12px;
           display: inline;
           padding: 5px; }
 
